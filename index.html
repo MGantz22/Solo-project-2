@@ -1,82 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/scripts.js"></script>
     <title>Pick your path</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script> 
 </head>
 <body>
-    <div>
-        <h1>Choose your Destiny!</h1>
+    <h1>Choose your Destiny!</h1>
             <p>So you think you have what it takes to be a programer huh? Well you made it this far, pat yourself on the back. Consider this the Hogwarts house sorting hat! lets figure out what progaming language is best for you! <p>
-
+    <form id="questions" class="container">
         <h2>Do you like the color <span>red</span> or <span>green</span>?</h2>
-        <form id="radio-form">
-            <input type="radio" name="q1" value="true" id="red" 
-            <label for="red"> Red</label><br>
-            <input type="radio" name="q1" value="no" id="no">
-            <label for="no"> Green</label><br>
-            <label>
-
+        <div>
+            <input type="radio" name="question1" value="red" id="q1">
+            <label for="q1"> Red</label><br>
+        </div>
+        <div>  
+            <input type="radio" name="question1" value="red2" id="green">
+            <label for="green"> Green</label><br>
+        </div>      
         <h2>Do you prefer <span>volcanos</span> or the <span>beach</span>?</h2>
-        <form id="radio-form">
-            <input type="radio" name="q2" value="volcanos" id="volcanos" 
-            <label for="volcanoes"> Volcanoes</label><br>
-            <input type="radio" name="q2" value="no" id="no">
-            <label for="no"> Beach</label><br>
-            <label>
-
+        <div>
+            <input type="radio" name="question2" value="volcanoes" id="q2">
+            <label for="q2"> Volcanoes</label><br>
+        </div>
+        <div>  
+            <input type="radio" name="question2" value="volcanoes" id="beach">
+            <label for="beach"> Beach</label><br>
+        </div>   
         <h2>Do you prefer the <span>desert</span> or <span>mountains</span> ?</h2>
-        <form id="radio-form">
-            <input type="radio" name="q3" value="desert" id="desert" 
-            <label for="desert"> Desert</label><br>
-            <input type="radio" name="q3" value="mountains" id="mountains">
-            <label for="mountains"> Moutains</label><br>
-            <label>
-
+        <div>
+            <input type="radio" name="question3" value="desert" id="q3">
+            <label for="q3"> Desert</label><br>
+        </div>
+        <div>    
+            <input type="radio" name="question3" value="desert" id="mountains">
+            <label for="mountains"> Mountains</label><br>
+        </div>  
         <h2>Do prefer <span>sharp</span> cheddar cheese or <span>mild</span> cheddar cheese?</h2>
-        <form id="radio-form">
-            <input type="radio" name="q4" value="sharp" id="sharp" 
-            <label for="sharp"> Sharp</label><br>
-            <input type="radio" name="q4" value="mild" id="mild">
+        <div>
+            <input type="radio" name="question4" value="sharp" id="q4">
+            <label for="q4"> Sharp</label><br>
+        </div>
+        <div>
+            <input type="radio" name="question4" value="sharp" id="mild">
             <label for="mild"> Mild</label><br>
-            <label>
-
+        </div>
         <h2>Are you always on the <span>go</span> or more <span>relaxed</span>?</h2>
-        <form id="radio-form">
-            <input type="radio" name="q5" value="go" id="go" 
-            <label for="go"> Go</label><br>
-            <input type="radio" name="q5" value="relaxed" id="relaxed">
+        <div>
+            <input type="radio" name="questoin5" value="go" id="q5"> 
+            <label for="q5"> Go</label><br>
+        </div>
+        <div>
+            <input type="radio" name="question5" value="go" id="relaxed">
             <label for="relaxed"> Relaxed</label><br>
-            <label>
+        </div>
         <p>Press the submit button and your life will be forever changed!
-            <br>    
-            <button type="submit">Submit Selection</button></p>        
-</form>
-    <div id="output">
-        <h1>Ruby is best!</h1>
-        <p>Set forth on your personal quest to learn Ruby language.</p>
-    </div>
-    <div id="volcanos" 
-        <h1>Javascript is best!</h1>
-        <p>Set forth on your personal quest to learn Javascript language.</p>
-    </div>
-    <div id="desert" 
-        <h1>Python is best!</h1>
-        <p>Set forth on your personal quest to learn Python language.</p>
-    </div>
-    <div id="sharp" 
-        <h1>C# is best!</h1>
-        <p>Set forth on your personal quest to learn C# language.</p>
-    </div>
-    <div id="go" 
-        <h1>Go is best!</h1>
-        <p>Set forth on your personal quest to learn Go language.</p>
-    </div>
-    <div id="relaxed" 
-        <h1>Rust is best!</h1>
-        <p>Set forth on your personal quest to learn Rust language.</p>
-    </div>
-        
- </body>   
+        <br>    
+        <button type="submit">Submit Selection</button></p>       
+    </form>
+    <p id="output"></p>     
+</body>   
 </html>

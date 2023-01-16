@@ -1,16 +1,22 @@
 function handleRadio(event) {
     event.preventDefault();
-    const radioSelection = document.querySelector("input[name='q1']:checked").value;
-    //const radioSelection = document.querySelector("input[name='q2']:checked").value;
-    //const radioSelection = document.querySelector("input[name='q3']:checked").value;
-    //const radioSelection = document.querySelector("input[name='q4']:checked").value;
-    //const radioSelection = document.querySelector("input[name='q5']:checked").value;
-  }
-  
-  window.addEventListener("load", function() {
-    document.getElementById("radio-form").addEventListener("submit", handleRadio);
-    if (radioSelection === "true") {
-        result = true;
-        document.getElementById("output").innerText = result;
+    let relaxed = document.getElementById("relaxed")
+    let q5 = document.getElementById("q5")
+    let q4 = document.getElementById("q4")
+    let q3 = document.getElementById("q3")
+    let q2 = document.getElementById("q2")
+    let q1 = document.getElementById("q1")
+    
+    if (relaxed.checked == true) {
+      document.getElementById("relaxed")
+      output = "rust!"
     }
-  });
+  
+document.getElementById("output").innerText = output;  
+
+}
+window.addEventListener("load", function() {
+  
+    const form = document.getElementById("questions");
+    form.addEventListener("submit", handleRadio);
+});
