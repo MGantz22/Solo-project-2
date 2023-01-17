@@ -24,4 +24,4 @@ window.addEventListener("load", function() {
 
 //The Java kingdom jury has selected you to  join forces and aid the beloved Script family, Its the only way we have a chance at winning this war. Together we will be called JavaScript!! The internet will soon be run by us!! Quickly you must learn JavaScript!! Your destiny has been chosen, see to it you will.
 
-//Ahh this ones got grit, rough one this one...Python it is. We noticed you liked long walks on the beach as well as snakes, Python is the perfect language for you. Python is very effecent, how else do you think it survives the long days of the desert.
+//Ahh this ones got grit, rough one this one...Python it is. We noticed you liked long walks on the beach as well as snakes, Python is the perfect language for you. Python is very efficient, how else do you think it survives the long days of the desert.
