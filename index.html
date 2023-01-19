@@ -6,58 +6,69 @@
     <script src="js/scripts.js"></script> 
 </head>
 <body>
-    <h1>Choose your Destiny!</h1>
-            <p>So you think you have what it takes to be a programmer huh? Well you made it this far, pat yourself on the back. Consider this the Hogwarts house sorting hat! lets figure out what programming language is best for you! <p>
-    <form id="questions" class="container">
-        <h2>Do you like the color <span>red</span> or <span>green</span>?</h2>
-        <div>
-            <input type="radio" name="question1" value="red" id="q1">
-            <label for="q1"> Red</label><br>
-        </div>
-        <div>  
-            <input type="radio" name="question1" value="red2" id="green">
-            <label for="green"> Green</label><br>
-        </div>      
-        <h2>Do you prefer <span>volcanos</span> or the <span>beach</span>?</h2>
-        <div>
-            <input type="radio" name="question2" value="volcanoes" id="q2">
-            <label for="q2"> Volcanoes</label><br>
-        </div>
-        <div>  
-            <input type="radio" name="question2" value="volcanoes" id="beach">
-            <label for="beach"> Beach</label><br>
-        </div>   
-        <h2>Do you prefer the <span>desert</span> or <span>mountains</span> ?</h2>
-        <div>
-            <input type="radio" name="question3" value="desert" id="q3">
-            <label for="q3"> Desert</label><br>
-        </div>
-        <div>    
-            <input type="radio" name="question3" value="desert" id="mountains">
-            <label for="mountains"> Mountains</label><br>
-        </div>  
-        <h2>Do prefer <span>sharp</span> cheddar cheese or <span>mild</span> cheddar cheese?</h2>
-        <div>
-            <input type="radio" name="question4" value="sharp" id="q4">
-            <label for="q4"> Sharp</label><br>
-        </div>
-        <div>
-            <input type="radio" name="question4" value="sharp" id="mild">
-            <label for="mild"> Mild</label><br>
-        </div>
-        <h2>Are you always on the <span>go</span> or more <span>relaxed</span>?</h2>
-        <div>
-            <input type="radio" name="questoin5" value="go" id="q5"> 
-            <label for="q5"> Go</label><br>
-        </div>
-        <div>
-            <input type="radio" name="question5" value="go" id="relaxed">
-            <label for="relaxed"> Relaxed</label><br>
-        </div>
-        <p>Press the submit button and your life will be forever changed!
-        <br>    
-        <button type="submit">Submit Selection</button></p>       
-    </form>
-    <p id="output"></p>     
-</body>   
+        <h1>Choose your Destiny!</h1>
+        <p>So you think you have what it takes to be a programmer huh? Well you made it this far, pat yourself on the back. Consider this the Hogwarts house sorting hat! lets figure out what programming language is best for you! 
+        </p>
+        <form id="userForm">
+            <h2>Do you like the color <span>red</span> or <span>green</span>?</h2>
+            <div>
+                <select id="question1">
+                    <option value="1">Red</option>
+                    <option value="2">Green</option>
+                </select>
+            </div>      
+            <h2>Do you prefer <span>volcanos</span> or the <span>beach</span>?</h2>
+            <div>
+                <select id="question2">
+                    <option value="1">Volcanos</option>
+                    <option value="2">Beach</option>
+                </select>
+            <div>  
+                
+            </div>   
+            <h2>Do you prefer the <span>desert</span> or <span>mountains</span> ?</h2>
+            <div>
+                <select id="question3">
+                    <option value="1">Desert</option>
+                    <option value="2">Mountains</option>
+                </select>
+            </div>  
+            <h2>Do prefer <span>sharp</span> cheddar cheese or <span>mild</span> cheddar cheese?</h2>
+            <div>
+                <select id="question4">
+                    <option value="1">Sharp</option>
+                    <option value="2">Mild</option>
+                </select>
+            </div>
+            <h2>Are you always on the <span>go</span> or more <span>relaxed</span>?</h2>
+            <div>
+                <select id="question5">
+                    <option value="1">Go</option>
+                    <option value="2">Relaxed</option>
+                </select>
+            </div>
+            <div>
+                <p>Press the submit button and your life will be forever changed!
+                <br>       
+                <button type="submit">Submit Selection</button></p>
+            </div>           
+            </form>
+            <div id="ruby" class="hidden">
+                <h1>Ruby has chosen you.</h1>
+                <p>It seems we have detected some Ruby amongst us! why yes.. thats a beautiful deep shade of ruby pickup on indeed. Gather your things quickly for the quest to learn the Ruby language has been bestowed upon you! Make your way to Rumford the Red Ruby Robot in Clinkerton, he will give you a map and supplies you will need. The odds are ever in your favor! Computing  arrival time now....Sincerely Ruby House Robots beep boop beep boo.</p>
+            </div>
+            <div id="javascript" class="hidden">
+                <h1>JavaScript has chosen you.</h1>
+                <p>The Java kingdom jury has selected you to  join forces and aid the beloved Script family, Its the only way we have a chance at winning this war. Together we will be called JavaScrip and take over the internet. Quickly you must learn JavaScript!! Your destiny has been chosen, see to it you will.</p>
+            </div>
+            <div id="python" class="hidden">
+                <h1>Python has chosen you!</h1>
+                <p>Ahh this ones got grit, rough one this one...Python it is. We noticed you liked long walks, Python is the perfect language for you. Python is very efficient, how else do you think it survives the long days of the desert.</p>
+            </div>
+            <div id="rust" class="hidden">
+                <h1>You are Rust</h1>
+                <p>Come back when you arent so rusty!</p>
+            </div>
+                
+    </body> 
 </html>

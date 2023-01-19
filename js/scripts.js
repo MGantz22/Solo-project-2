@@ -1,27 +1,38 @@
-function handleRadio(event) {
-    event.preventDefault();
-    let relaxed = document.getElementById("relaxed")
-    let q5 = document.getElementById("q5")
-    let q4 = document.getElementById("q4")
-    let q3 = document.getElementById("q3")
-    let q2 = document.getElementById("q2")
-    let q1 = document.getElementById("q1")
+function hideResults(){
+    document.getElementById("ruby").setAttribute("class","hidden");
+    document.getElementById("javascript").setAttribute("class","hidden");
+    document.getElementById("python").setAttribute("class","hidden");
     
-    if (relaxed.checked === true) {
-      document.getElementById("relaxed")
-      output = "rust!"
-    }
-  
-document.getElementById("output").innerText = output;  
-
 }
-window.addEventListener("load", function() {
-  const form = document.getElementById("questions");
-    form.addEventListener("submit", handleRadio);
-});
 
-//It seems we have detected some Ruby amongst us! why yes.. thats a beautiful deep shade of ruby pickup on indeed. Gather your things quickly for the quest to learn the Ruby language has been bestowed upon you! Make your way to Rumford the Red Ruby Robot in Clinkerton, he will give you a map and supplies you will need. The odds are ever in your favor! Computing  arrival time now....Sincerely Ruby House Robots beep boop beep boo.
+window.addEventListener("load", onWindowLoad);
 
-//The Java kingdom jury has selected you to  join forces and aid the beloved Script family, Its the only way we have a chance at winning this war. Together we will be called JavaScript!! The internet will soon be run by us!! Quickly you must learn JavaScript!! Your destiny has been chosen, see to it you will.
 
-//Ahh this ones got grit, rough one this one...Python it is. We noticed you liked long walks on the beach as well as snakes, Python is the perfect language for you. Python is very efficient, how else do you think it survives the long days of the desert.
+function onWindowLoad() {
+  let form = document.getElementById("userForm");
+  form.addEventListener("submit", takeForm);
+}
+
+function takeForm(event) {
+  event.preventDefault();
+  hideResults();
+
+  const question1 = parseInt(document.getElementById("question1").value);
+  const question2 = parseInt(document.getElementById("question2").value);
+  const question3 = parseInt(document.getElementById("question3").value);
+  const question4 = parseInt(document.getElementById("question4").value);
+  const question5 = parseInt(document.getElementById("question5").value);
+  const results = question1 + question2 + question3 + question4 + question5
+
+  if (results <=5 ) {
+    document.getElementById("ruby").removeAttribute("class");
+  } else if (results >=6 && results < 7) {
+    document.getElementById("python").removeAttribute("class");
+  } else if (results >=7 && results < 9) {
+    document.getElementById("javascript").removeAttribute("class");
+  } else if (results >=9 && results < 10) {
+    document.getElementById("python").removeAttribute("class")
+  } else {
+    document.getElementById("javascript").removeAttribute("class")
+  }
+};
