@@ -1,8 +1,7 @@
 function hideResults(){
     document.getElementById("ruby").setAttribute("class","hidden");
     document.getElementById("javascript").setAttribute("class","hidden");
-    document.getElementById("python").setAttribute("class","hidden");
-    
+    document.getElementById("python").setAttribute("class","hidden"); 
 }
 
 window.addEventListener("load", onWindowLoad);
