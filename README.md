@@ -12,7 +12,7 @@
 
 ## Description
 
-_This is a project showcasing the skills I've learned so far in the course at Epicodus; This is my Second solo project. On this page you will learn what your destiny is as a programmer and a recommendation on what language is best for you depending on your answers. You will also find a list of my first projects along with links._
+_This is a project showcasing the skills I've learned so far in the course at Epicodus; This is my Second solo project. On this page you will learn what your destiny is as a programmer and a recommendation on what language is best for you depending on your answers._
 
 ## Setup/Installation Requirements
 
@@ -22,7 +22,7 @@ _This is a project showcasing the skills I've learned so far in the course at Ep
 
 ## Known Bugs
 
-* _none at the moment_
+* _none_
 
 
 

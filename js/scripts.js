@@ -1,15 +1,8 @@
+//Business Logic
 function hideResults(){
     document.getElementById("ruby").setAttribute("class","hidden");
     document.getElementById("javascript").setAttribute("class","hidden");
     document.getElementById("python").setAttribute("class","hidden"); 
-}
-
-window.addEventListener("load", onWindowLoad);
-
-
-function onWindowLoad() {
-  let form = document.getElementById("userForm");
-  form.addEventListener("submit", takeForm);
 }
 
 function takeForm(event) {
@@ -35,3 +28,9 @@ function takeForm(event) {
     document.getElementById("javascript").removeAttribute("class")
   }
 };
+//User Interface Logic
+window.addEventListener("load", onWindowLoad);
+function onWindowLoad() {
+  let form = document.getElementById("userForm");
+  form.addEventListener("submit", takeForm);
+}
