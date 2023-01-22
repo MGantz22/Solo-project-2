@@ -28,6 +28,7 @@ function takeForm(event) {
     document.getElementById("javascript").removeAttribute("class")
   }
 };
+
 //User Interface Logic
 window.addEventListener("load", onWindowLoad);
 function onWindowLoad() {
